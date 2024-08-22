@@ -1,0 +1,29 @@
+<div style="width:500px;height: auto;margin-left:400px;margin-top: 100px;">
+    <mat-card class="showitem" *ngFor="let d of data">
+        <div style="padding: 30px;">
+            <div>
+                {{d.name | uppercase}}
+            </div>
+            <br>
+            <div>
+                {{d.description | lowercase}}
+            </div>
+            <br>
+            <div>
+                <span>Price : </span>{{d.price}}<span> ₹</span>
+            </div>
+            <div>
+                <span>Delivery within </span>{{d.delivery_days}}<span> Days</span>
+            </div>
+            <br>
+            <div>
+                {{d.review}}
+            </div>
+            <br>
+            <div style="display: flex;gap:10px;"> 
+                <span>Add Review</span>
+                <input name="review" [(ngModel)]="review" placeholder="Add new review here"/>
+            </div>
+        </div>
+    </mat-card>
+</div>
