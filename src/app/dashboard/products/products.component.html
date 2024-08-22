@@ -1,0 +1,24 @@
+<div style="display:flex; flex-wrap: wrap; gap: 30px;margin-top: 50px; margin-left: 30px;">
+    <mat-card style="width:200px;height:fit-content;padding: 10px;" *ngFor="let data of dataList">
+        <div>
+            <div>
+                {{data.name | uppercase}}
+            </div>
+            <br>
+            <div>
+                <span>description : </span>{{data.description}}
+            </div>
+            <br>
+            <div>
+                <span>Price : </span>{{data.price}}<span> ₹</span>
+            </div>
+            <div>
+                <span>Delivery within </span>{{data.delivery_days}}<span> Days</span>
+            </div>
+            <br>
+            <div>
+                <span>Reviews :</span>{{data.review}}
+            </div>
+        </div>  
+    </mat-card>
+</div>
