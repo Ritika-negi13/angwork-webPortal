@@ -1,0 +1,32 @@
+<body>
+    <div class="main">
+        <form action="">
+            <div class="main">
+                <div class="flex-container-1">
+                    <h1>Sign Up</h1>
+                    <div>
+                            <mat-form-field ngClass="focus-field" appearance="outline" color=primary>
+                                <mat-label >Name</mat-label>
+                                <input name="name" matInput #myInput placeholder="name" [(ngModel)]="name" >
+                            </mat-form-field>
+                            <br>
+                            <br>
+                            <mat-form-field ngClass="focus-field" appearance="outline" color=primary>
+                                <mat-label >Email or phone</mat-label>
+                                <input name="email" matInput #myInput placeholder="Email" [(ngModel)]="email" >
+                            </mat-form-field>
+                        <br>
+                        <mat-form-field ngClass="focus-field" appearance="outline" color=primary>
+                            <mat-label>Password</mat-label>
+                            <input matInput name="password"   [(ngModel)]="password" placeholder="password" >
+                        </mat-form-field>
+
+                    <div class="button-class">
+                        <button mat-raised-button color="primary" class="button button-2">Next</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
