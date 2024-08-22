@@ -1,0 +1,37 @@
+.material-symbols-outlined{
+    color:gray;
+    font-size: 30px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(184, 181, 181);
+}
+.search{
+    padding:5px;
+    width:400px;
+    height:40px;
+    display: flex;
+    background-color: white;
+    border: solid grey;
+    border-radius: 10px;
+}
+.filter{
+    padding: 10px;
+    width:100px;
+    height:30px;
+    display: flex;
+    border: solid grey;
+    border-radius: 10px;
+    background-color: white;
+}
+#input{
+    width: 400px;
+    height:30px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
