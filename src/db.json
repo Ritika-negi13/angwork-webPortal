@@ -1,43 +1,123 @@
 {
-    "product": [{
+  "user": [
+    {
+      "id": "1234",
+      "name": "Ritika",
+      "email": "ritika@gmail.com",
+      "password": "Ritika@13"
+    },
+    {
+      "id": "ba54",
+      "name": "mayank",
+      "email": "mayank@gmail.com",
+      "password": "mayank@13"
+    },
+    {
+      "id": "1e7e",
+      "name": "abhishek",
+      "email": "abhi@gmail.com",
+      "password": "abhi@123"
+    },
+    {
+      "id": "5afa",
+      "name": "keshav",
+      "email": "kky@gmail.com",
+      "password": "kk@13"
+    },
+    {
+      "id": "4f2b",
+      "name": "Roshni Mali",
+      "email": "r@gmail.com",
+      "password": "R123@"
+    }
+  ],
+  "product": [
+    {
       "id": "12345",
       "name": "Wireless Mouse",
       "description": "A high-precision wireless mouse with ergonomic design.",
+      "img": "assets/mose1.jpg",
       "price": 567,
-      "delivery_days":2,
-      "review":["nice product"]
+      "delivery_days": 2,
+      "review": [
+        "nice product"
+      ]
     },
     {
-        "id": "12346",
-        "name": "Wireless Mouse",
-        "description": "A high-precision wireless mouse with ergonomic design.",
-        "price": 567,
-        "delivery_days":2,
-        "review":["nice product"]
+      "id": "12346",
+      "name": "Wireless Mouse",
+      "description": "A high-precision wireless mouse with ergonomic design.",
+      "img": "assets/mouse2.jpg",
+      "price": 567,
+      "delivery_days": 2,
+      "review": [
+        "nice product",
+        "very good",
+        "jj",
+        "ujj",
+        "keshav ko pasand nhi aya"
+      ]
     },
     {
-        "id": "12347",
-        "name": "Wireless Mouse",
-        "description": "A high-precision wireless mouse with ergonomic design.",
-        "price": 567,
-        "delivery_days":2,
-        "review":["nice product"]
+      "id": "12347",
+      "name": "Wireless Mouse",
+      "description": "A high-precision wireless mouse with ergonomic design.",
+      "img": "assets/mouse3.jpg",
+      "price": 567,
+      "delivery_days": 2,
+      "review": [
+        "nice product"
+      ]
     },
     {
-        "id": "12348",
-        "name": "Wireless Mouse",
-        "description": "A high-precision wireless mouse with ergonomic design.",
-        "price": 567,
-        "delivery_days":2,
-        "review":["nice product"]
+      "id": "12348",
+      "name": "Wireless Mouse",
+      "description": "A high-precision wireless mouse with ergonomic design.",
+      "img": "assets/mouse4.jpg",
+      "price": 567,
+      "delivery_days": 2,
+      "review": [
+        "nice product",
+        "not good",
+        "working well"
+      ]
     },
     {
-        "id": "12349",
-        "name": "Wireless Mouse",
-        "description": "A high-precision wireless mouse with ergonomic design.",
-        "price": 567,
-        "delivery_days":2,
-        "review":["nice product"]
+      "id": "12349",
+      "name": "Wireless Mouse",
+      "description": "A high-precision wireless mouse with ergonomic design.",
+      "img": "assets/mouse5.jpg",
+      "price": 567,
+      "delivery_days": 2,
+      "review": [
+        "nice product",
+        "working well"
+      ]
+    },
+    {
+      "id": "12350",
+      "name": "Laptop",
+      "description": " A sleek and powerful laptop with high performance and long battery life.",
+      "img": "assets/laptop.jpg",
+      "price": 567,
+      "delivery_days": 2,
+      "review": [
+        "nice product",
+        "Happy user",
+        "keshav ko pasand nhi aya"
+      ]
+    },
+    {
+      "id": "12351",
+      "name": "Mobile phone",
+      "description": " A sleek and powerful Mobile with high performance and long battery life.",
+      "img": "assets/mobile.jpg",
+      "price": 5453,
+      "delivery_days": 1,
+      "review": [
+        "nice product",
+        "Happy user"
+      ]
     }
-    ]
+  ]
 }
