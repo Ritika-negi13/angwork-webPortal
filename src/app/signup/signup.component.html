@@ -16,13 +16,14 @@
                                 <input name="email" matInput #myInput placeholder="Email" [(ngModel)]="email" >
                             </mat-form-field>
                         <br>
+
                         <mat-form-field ngClass="focus-field" appearance="outline" color=primary>
                             <mat-label>Password</mat-label>
                             <input matInput name="password"   [(ngModel)]="password" placeholder="password" >
                         </mat-form-field>
 
                     <div class="button-class">
-                        <button mat-raised-button color="primary" class="button button-2">Next</button>
+                        <button mat-raised-button color="primary" class="button button-2" (click)="addData()">Next</button>
                     </div>
                 </div>
             </div>
