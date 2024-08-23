@@ -3,22 +3,34 @@
 </head>
 <div>
     <div class="header">
+        <div>
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
         <div class="search">
-            <input id="input" placeholder="search"/>
+            <input id="input" placeholder="search" name="search" [(ngModel)]="search" (keyup)="searchData()" />
             <span class="material-symbols-outlined">
                 search
             </span>
-        </div>     
-        <br>
-        <div class="filter">
-            <mat-form-field class="dropdown">
-                <mat-label>Select</mat-label>
-                <mat-select placeholder="Select" >
-                  <mat-option value="price">Price</mat-option>
-                  <mat-option value="rating">Rating</mat-option>
-                  <mat-option value="Delivery">Delivery Days</mat-option>
-                </mat-select>
-              </mat-form-field> 
+        </div>    
+        <div style="display: flex;">
+            <div class="filter">
+                <label for="price">Price:</label>
+                <select id="price" class="filter-select" (change)="onFilterChange()">
+                <option value="all">All</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="delivery">Delivery Time:</label>
+                <select id="delivery" class="filter-select" (change)="onFilterChange()">
+                <option value="all">All</option>
+                <option value="fast">Fastest</option>
+                <option value="slow">Slowest</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>

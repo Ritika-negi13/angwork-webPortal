@@ -4,25 +4,29 @@
 }
 .header{
     display: flex;
-    flex-direction: column;
+    gap:30px;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
     background-color:rgb(184, 181, 181);
 }
 .search{
-    padding:5px;
-    width:400px;
+    padding:5px 10px;
+    width:80%;
     height:40px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
     border: solid grey;
     border-radius: 10px;
 }
 .filter{
     padding: 10px;
-    width:100px;
+    width:150px;
     height:30px;
-    display: flex;
+    display: none;
+    justify-content: space-between;
     border: solid grey;
     border-radius: 10px;
     background-color: white;
@@ -41,3 +45,12 @@ div.mat-form-field{
     height:30px;
     margin-bottom: 0px;
 }
+
+@media screen and (min-width: 862px) {
+    .filter {
+      display: flex;
+    }
+    .search {
+        width: 40%;
+    }
+  }
