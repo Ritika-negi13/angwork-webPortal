@@ -1,13 +1,14 @@
-<div style="display:flex; flex-wrap: wrap; gap: 30px;margin-top: 50px; margin-left: 30px;">
-    <mat-card style="width:200px;height:fit-content;padding: 10px;" *ngFor="let data of dataList">
-        <div>
+<div style="display:flex; flex-wrap: wrap;align-items: center; gap: 2.1%;" >
+    <mat-card style="width:200px;height:fit-content;padding: 10px;margin-top: 30px;" *ngFor="let data of dataList | searchPipe:search " >
+        <div (click)="openshowitem(data)">
             <div>
                 {{data.name | uppercase}}
             </div>
             <br>
-            <div>
-                <span>description : </span>{{data.description}}
+            <div >
+                <img src={{data.img}} style="height:150px; width: 150px;">
             </div>
+            <br>
             <br>
             <div>
                 <span>Price : </span>{{data.price}}<span> ₹</span>
@@ -16,9 +17,6 @@
                 <span>Delivery within </span>{{data.delivery_days}}<span> Days</span>
             </div>
             <br>
-            <div>
-                <span>Reviews :</span>{{data.review}}
-            </div>
         </div>  
     </mat-card>
 </div>
