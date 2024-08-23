@@ -1,10 +1,13 @@
-<div style="width:500px;height: auto;margin-left:400px;margin-top: 100px;">
+<div style="width:500px;height: auto;margin-left:400px;margin-top: 10px;">
     <mat-card class="showitem" *ngFor="let d of data">
         <div style="padding: 30px;">
             <div>
                 {{d.name | uppercase}}
             </div>
             <br>
+            <div>
+                <img src={{d.img}} style="height:300px;">
+            </div>
             <div>
                 {{d.description | lowercase}}
             </div>
@@ -16,13 +19,13 @@
                 <span>Delivery within </span>{{d.delivery_days}}<span> Days</span>
             </div>
             <br>
-            <div>
-                {{d.review}}
+            <div *ngFor="let r of d.review">
+                {{r}}
             </div>
             <br>
             <div style="display: flex;gap:10px;"> 
                 <span>Add Review</span>
-                <input name="review" [(ngModel)]="review" placeholder="Add new review here"/>
+                <input name="review" [(ngModel)]="review" placeholder="Add new review here" (keypress)="addreview($event)"/>
             </div>
         </div>
     </mat-card>
