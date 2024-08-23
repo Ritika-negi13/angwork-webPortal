@@ -8,7 +8,11 @@ import { ShowitemComponent } from './showitem/showitem.component';
 const routes: Routes = [
   {
     path:'',
-    component:DashboardComponent,
+    component:LoginComponent,
+  },
+  {
+    path:'dashboard',
+    component:DashboardComponent
   },
   {
     path :'login',
